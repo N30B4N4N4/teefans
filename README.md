@@ -1,5 +1,5 @@
 # Teefans
-[fashioner.teefans.ltd](fashioner.teefans.ltd)
+[fashioner.teefans.ltd](https://fashioner.teefans.ltd/)
 
 
 # Folder structure
