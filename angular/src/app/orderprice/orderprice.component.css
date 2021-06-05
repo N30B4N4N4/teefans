@@ -1,0 +1,10 @@
+#price{
+    margin-top: 4rem;
+    margin-bottom: 16rem;
+}
+
+#price img{
+    width:100%;
+    position: relative;
+    transform: translateX(5%);
+}

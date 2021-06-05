@@ -1,0 +1,41 @@
+.row{
+    background-position: center;
+    background-size: auto 100%; 
+}
+
+.left{
+    overflow: hidden;
+    background-size: contain;
+    background-repeat: round;
+}
+
+.left img{
+    max-width:960px;
+}
+
+.title{
+    text-align: center;
+}
+
+.right{
+    overflow: hidden;
+    background-size: contain;
+    background-repeat: round;
+}
+
+.right img{
+    max-width:960px;
+}
+
+.type2 .title{
+    background-color: black;
+    color:white;
+    border-radius: 10px;
+    padding: 0.75rem 3rem;
+}
+
+
+
+
+
+

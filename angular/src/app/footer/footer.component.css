@@ -1,0 +1,45 @@
+ a{
+    text-decoration: none!important;
+ }
+
+ footer{
+    background-color: #222323;  
+    padding-top:1rem;
+ }
+
+ footer .strip{
+    background-color: white;
+    height:0.75rem;
+}
+
+ footer .upper{
+     margin-top:1.5rem;
+     font-size:1rem;
+     color:lightgray;
+ }
+ 
+ footer .upper h3{
+     color:lightgray;
+ }
+ 
+ footer .upper a{
+     color: lightgray;
+     text-decoration: underline;
+ }
+ footer .lower{
+    
+     margin-top: 5rem; 
+     font-size: 1rem;
+     color:#ffffff; 
+ }
+ 
+ footer .lower .social img{
+    margin-left: 0.75rem;
+    width:2rem;
+ }
+
+
+
+
+
+  

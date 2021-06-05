@@ -1,0 +1,112 @@
+<section id="main">
+    <section id="contact-info">
+        <div class="container-fluid">
+            <div class="row spacing-cm justify-content-end">
+                <div id="customer-message" class="col-auto">
+                    <img class="deco1" src="assets\layout\sn3.png">
+                    <img class="deco2" src=assets\layout\cm1.png>
+                    <img class="deco3" src=assets\layout\cm1.png>
+                    <form [formGroup]="messageForm" (ngSubmit)="onSubmit(messageForm.value)">
+                        <div class="title">
+                            <h3>顧客訊息</h3>
+                            <p>如有查詢或定制需求,可在此留下訊息,我們會盡快聯絡您</p>
+                        </div>
+                        <div class="content">
+                            <b>*必須填寫內容</b>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="name" placeholder="*顧客姓名" formControlName="name">
+                            </div>
+                            <div *ngIf="submitted && messageForm.controls.name.errors">
+                                <div *ngIf="messageForm.controls.name.errors.required" style="color:red;">this field is required</div>
+                            </div>
+
+                            <div class="form-group">       
+                                <input type="phone" class="form-control" id="tel" placeholder="*聯絡電話號碼/電郵地址*" formControlName="tel">
+                            </div>
+                            <div *ngIf="submitted && messageForm.controls.tel.errors">
+                                <div *ngIf="messageForm.controls.tel.errors.required" style="color:red;">this field is required</div>
+                                <div *ngIf="messageForm.controls.tel.errors.pattern" style="color:red;">please make sure the phone no. / email address is valid</div>                            
+                            </div>
+                            
+                            <div class="msg">     
+                                <textarea class="form-control" id="content" rows="3" placeholder="*訊息" formControlName="content"></textarea>
+                            </div>
+                            <div *ngIf="submitted && messageForm.controls.content.errors">
+                                <div *ngIf="messageForm.controls.content.errors.required" style="color:red;">this field is required</div>
+                            </div>
+
+                            <div [ngStyle] = "{'color' : sent ? 'green' : 'red'}">{{status}}</div>
+
+                            <div class="row align-items-center">
+                                <div class="col deco4">
+                                    <img src="assets\layout\cm3.png">
+                                </div>
+                                <div class="col-auto">
+                                    <button class="btn" type="submit">發送</button>
+                                </div>
+                                <div class="col deco4">
+                                    <img src="assets\layout\cm3.png">
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </form>
+                </div>
+            </div>
+        <div id="contact">
+            <div class="row spacing justify-content-center align-items-center">
+                <div class="social col-auto">
+                    <img src="assets\layout\social.png">
+                    <a href="https://www.instagram.com/teefans/" style="top: 25%; left: 21%; width: 13%; height: 12%;"></a>
+                    <a href="https://wa.me/85255043451" style="top: 42%; left: 21%; width: 13%; height: 12%;"></a>
+                    <a href="mailto:cosinihk@email.com" style="top: 59%; left: 21%; width: 13%; height: 12%;"></a>
+                    <!--<a href="fb" style="top: 65.5%; left: 18%; width: 13%; height: 10%;"></a>-->
+                </div>
+                
+                <div class="col-lg col-md col-12 text-center text-lg-left">
+                    <p><u>訂閱我們的社交平台</u>,了解更多最新資訊</p>
+                </div>
+            </div>
+        </div>
+        </div>  
+    </section>
+    
+    <section id="common-questions">
+        <div class="container-fluid">
+        <div class="row spacing">
+            <div class="col-12">
+                <heading type="2" [styleT]="{'border-radius':'0px'}" bg="linear-gradient(90deg, #BDF2EC 50%,  #d8b5ff 50%)" title="常見問題" size="2rem"></heading>
+                <div class="row content spacing">
+                    <div class="col-12">
+                        <div class="accordion" id="faq">
+                            <div *ngFor="let question of questions;index as i">
+                                <div class="card">
+                                    <div class="card-header" id="{{'heading'+i}}">
+                                      <h2 class="mb-0">
+                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" [attr.data-target]="'#collapse' + i" aria-expanded="false" aria-controls="{{'collapse'+i}}">
+                                          問 : {{question.q}}
+                                        </button>
+                                      </h2>
+                                    </div>
+                                    <div id="{{'collapse'+i}}" class="collapse" aria-labelledby="{{'heading'+i}}" data-parent="#faq">
+                                      <div class="card-body">
+                                       答 : {{question.a}}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>  
+    <div class="backtohome">
+        <button> 
+          <a routerLink="">
+            回到主頁
+          </a>
+        </button>
+      </div>
+</section>

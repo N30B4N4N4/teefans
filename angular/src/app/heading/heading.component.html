@@ -1,0 +1,12 @@
+<div class="row align-items-center" [ngStyle]="style" [ngClass]="{'1':'type1','2':'type2'}[type]">
+    <div class ="col left" [ngStyle]="styleL">
+        <img class="float-left" src={{left}}>
+    </div>
+    <div class="col-auto title" [ngStyle]="styleT">
+        {{title}}
+    </div>
+    <div class="col right" [ngStyle]="styleR">
+        <img class="float-right" src={{right}}>
+    </div>
+</div>
+

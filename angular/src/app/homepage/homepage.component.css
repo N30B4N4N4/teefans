@@ -1,0 +1,152 @@
+.carousel-item{
+    overflow-x:hidden;
+} 
+
+.carousel img{
+    object-fit: cover;
+    height:100%;
+}
+
+#sample-display{
+    margin-top: 1rem;
+}
+
+#sample-display .content{
+    background:url("/assets/layout/sampledisplay_bg.png");
+    padding: 4.5rem 0px 0px;
+    background-position: center;
+    background-size: 98% 100% ;
+    background-repeat: no-repeat; 
+}
+
+#sample-display .content .card{
+    border:5px black solid;
+    height: 16rem;
+}
+
+#sample-display .content .card img{
+    height: 100%;
+}
+
+#sample-display .content .learnmore{
+    margin-top: 2rem;
+    padding-right: 2.5rem;
+    height:3rem;
+}
+
+
+#whychooseus{
+    margin: 3rem 0px;
+}
+
+#whychooseus img{
+    width:100%;
+}
+
+#whychooseus .right .col-6{
+    padding: 0px 0.5rem;
+    margin-bottom: 1rem;
+}
+
+#steps .deco{
+    margin: 1rem 0px 3rem;
+    height:1.25rem;
+    background: url('/assets/layout/chain.png') center space;
+    background-size: contain;
+}
+
+#steps .content{
+  
+    padding: 1.5rem 1rem; 
+    background-color: #BDF4EC;
+}
+
+#steps .content img{
+    width:100%;
+}
+
+#steps button{
+    font-size: 2rem;
+    margin-top: 2rem;
+    padding:0px 1.5rem;
+    border-radius: 12px;
+    border: 2px solid;
+    background-color: black;
+    text-decoration: none;
+}
+
+#steps button a{
+    color:white;
+    text-decoration: none;
+}
+
+.backtotop{
+    margin: 3rem 0px;
+}
+.backtotop button{
+    position:relative;
+    left:50%;
+    transform: translate(-50%);
+    font-size: 1.5rem;
+    background-color: black;
+    text-decoration: none;
+    border:0px;
+}
+
+.backtotop button a{
+    color:white;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 992px){
+    .carousel-item{
+       height:25vh;
+   }    
+
+   #sample-display .content .card{
+        margin-bottom: 30px;
+   }
+
+   #sample-display .content .learnmore{
+        margin-top: 0px;
+        height: 40px;
+    }
+
+}
+
+@media only screen and (max-width:768px){ 
+    .desktop{
+        display:none;
+    }
+
+    #whychooseus .left{
+        margin-bottom: 15px;
+    }
+
+    #whychooseus .right .row{
+        margin: 0px 7.5px;
+    }
+    
+    #sample-display .content{
+        background:url("/assets/layout/sampledisplay_bg2.png");
+        padding: 50px 0px 0px;
+        margin-top: 60px;
+        background-position: center;
+        background-size: 98% 100% ;
+        background-repeat: no-repeat; 
+    }
+    .step5{
+        margin-right:45px;
+    }
+}
+
+@media only screen and (min-width:768px){ 
+    .mobile{
+        display:none;
+    }
+
+}
+
+
+
+

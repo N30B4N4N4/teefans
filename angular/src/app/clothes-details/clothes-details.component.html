@@ -1,0 +1,115 @@
+         
+<section id="page-heading">
+    <div class="container-fluid">
+        <heading title='衣服詳情' fontSize="2.25rem" left="assets\layout\leftarrow.png" right="assets\layout\rightarrow.png"></heading>
+    </div>
+</section>
+<section id="main">
+    <section id="clothes-materials">
+        <div class="container-fluid">
+        <heading type="2" title="T恤面料" fontSize="1.5rem" [style]="{'margin': '0px 1rem'}" [styleL]="{'height':'3.5rem'}" [styleR]="{'height':'3.5rem'}" bgLeft="url('/assets/layout/sq1.png')" bgRight="url('/assets/layout/sq2.png')"></heading>   
+            <div class="row content justify-content-center">
+                <div *ngFor="let material of materials;index as i">
+                    <div class="col-3">
+                        <div class="card"style="width: 14rem;">
+                            <img class="card-img-top" src="{{material.img}}" alt="Card image cap">
+                            <div class="card-body" [ngStyle]="{'border-color':(( i + 1 ) % 2 == 1) ? '#DBC3F4' : '#ABD3CE'}">
+                                <h5 class="card-title">{{ material.title }}</h5>
+                                <p class="card-text">{{ material.desc }}</p>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="technics">
+        
+        <div class="container-fluid">
+            <heading type="2" title="印刷工藝" fontSize="1.5rem" [style]="{'padding':'1rem 0px'}" bg="linear-gradient(180deg, #BDF2EC 50%,  #d8b5ff 50%)"></heading>
+            <div class="row content justify-content-center" >
+                <div *ngFor="let technic of technics" class="technic">
+                    <div class="col-12 text-center">
+                        <h3>{{ technic.title }}</h3>
+                        <h5>{{ technic.subtitle}}</h5>
+                        <div class="row">
+                            <div class="col-12">
+                                <img src="{{technic.img}}"> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+           </div>
+        </div>
+    </section>
+    <section id="size">
+        <div class="container-fluid">
+            <heading type="2" title="參考尺碼表" fontSize="1.5rem" [styleT]="{'padding':'1rem 1.25rem'}"></heading>
+            <div class="row">
+                <div class="col-12">
+                    <img src="assets\layout\sizetable.png"> 
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="logo">
+        <div class="container-fluid">
+            <heading type="2" title="圖案位置指引" fontSize="1.5rem" [style]="{'margin-bottom':'1rem'}" [styleT]="{'padding':'1rem 1.25rem'}"></heading>
+            <div class="row">
+                <div class="col-12">
+                    <img src="assets\layout\logoplace.png"> 
+                </div>
+            </div>
+        </div>
+    </section>
+        <section id="clothes-templates">
+            <div class="container-fluid">
+                    <heading class="head" type="2" title="檔案下載" fontSize="1.5rem" [style]="{'padding': '0px'}" [styleL]="{'height':'3.5rem'}" [styleT]="{'margin':'0px 1rem'}" [styleR]="{'height':'3.5rem'}" bgLeft="url('/assets/layout/tri1.png')" bgRight="url('/assets/layout/tri2.png')"></heading>
+                    <div class="row content justify-content-center">
+                        <div class="col-12">
+                            <div class="row">
+                                <div class="col-12 text-center">
+                                    <h3>*請點擊色圈預覽不同顔色衣服的檔案</h3>
+                                </div>
+                            </div>
+                            <div *ngFor="let template of templates">
+                                <div class="clothes-template">
+                                    <div class="row justify-content-center">
+                                        <div class="col-auto palettes">
+                                            <div class="row">
+                                                <div  *ngFor="let variant of template.variants;index as i">
+                                                <div class="col-1" style="padding:0px">
+                                                    <div class="palette">
+                                                        <button [ngStyle]="{'background-color':'#'+variant.color}"(click)="changeVariant(template,i)"></button>
+                                                    </div>   
+                                                </div>
+                                                                                  
+                                            </div>
+                                            </div>
+                                        </div>
+                                            
+                                    </div>
+                                    <div class="row justify-content-start">
+                                        <div class="col-2" style="padding:0px">
+                                            <img src="assets\layout\sn1.png" class="stepno">
+                                        </div>
+                                        <div class="template col-xl-8 col-lg-8 col-9">
+                                            <img src="{{template.variants[template.current].img}}" alt="Card image cap">                               
+                                        </div>
+                                                 
+                                    </div>
+                                    
+                                     
+                                </div>
+                                
+                                <a href="{{template.variants[template.current].img}}" target="_blank">
+                                    <button class="btn download" type="button">下載</button> 
+                                </a>
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+            </div>
+            </section>
+</section>

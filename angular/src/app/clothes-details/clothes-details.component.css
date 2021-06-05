@@ -1,0 +1,177 @@
+#page-heading {
+    margin-top: 2.5rem;
+    margin-bottom: 4rem;
+}
+
+#main{
+    margin-bottom: 6rem;
+}
+.content{
+    margin-top:4rem;
+}
+
+#clothes-materials {
+    margin-bottom: 4rem;
+}
+
+#clothes-materials .card{
+    margin-bottom: 1.5rem;
+    border:0px;
+}
+
+#clothes-materials .card-img-top{
+    height: 14rem;
+    border: black 4px solid;
+}
+
+#clothes-materials .card-body{
+    margin-top: 1.5rem;
+    padding:0.5rem 0px;
+    border:3px solid;
+    border-radius: 15px;
+}
+
+#clothes-materials .card .card-title{
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+#clothes-materials .card .card-text{
+    font-size:1.15rem;
+    text-align: center;
+}
+
+#clothes-templates{
+    margin-top: 2rem;
+}
+
+#clothes-templates h3{
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-bottom:1.5rem;
+}
+
+#clothes-templates .content{
+    margin-top: 1rem;
+    padding: 1.5rem 1.5rem;
+    background-color: #BDF2EC;
+}
+
+.clothes-template{
+    background-color:white;
+}
+
+.palettes{
+    padding:1rem 2rem!important;
+}
+
+.palette{
+    padding:0px 0.5rem;
+}
+
+.palette button{
+    border-radius:100%;
+    border: 0px;
+    height:2rem;
+    width:2rem;
+}
+
+.palette button:focus{
+    box-shadow: 0px 0px 8px grey;
+}
+
+
+
+
+.stepno{
+    position:relative;
+    top:20%;
+    width:100%;
+    max-width:23rem;
+    padding-left: 2.5rem; 
+}
+
+.template{
+    padding-left: 5rem;
+    width:100%;
+}
+
+.template img{
+    width:100%;
+}
+
+.download{
+    position:relative;
+    margin-top: 1.5rem;
+    left:50%;
+    transform: translateX(-50%);
+    border-radius: 10px;
+    background-color:#DBC3F4;
+    padding: 0.5rem 2rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color:black;
+}
+
+.download:focus{
+    box-shadow: 0px 0px 8px grey;
+}
+
+.download a{
+    
+    text-decoration: none;
+}
+
+#technics h3{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#technics h5{
+    font-size: 1.25rem;
+    margin-bottom: 1.25rem;
+}
+
+.technic {
+    margin-bottom: 4rem;
+}
+
+.technic img{
+    width:100%;
+}
+
+#size {
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+}
+
+#size img{
+    width:100%;
+}
+
+#logo {
+    margin-top: 6rem;
+    margin-bottom: 8rem;
+}
+
+#logo img{
+    width:100%;
+}
+
+@media only screen and (max-width: 992px){
+    
+    .palettes{
+        margin: 0px 30px;
+        padding: 15px 5px;
+    }
+
+    .template{
+        padding-left:0px;
+    }
+ 
+}
+
+
+

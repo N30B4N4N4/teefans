@@ -1,0 +1,56 @@
+/* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: youyuan;
+    src: url(assets/fonts/youyuan.ttf) format("truetype");
+  }
+
+*{
+    font-family: 'youyuan';
+}
+
+html{
+    font-size:16px;
+}
+
+.container-fluid{
+    width:90%;
+}
+
+button:focus, .btn:focus{
+    outline: none;
+    box-shadow: none;
+}
+
+@media only screen and (max-width: 992px){
+    html{
+        font-size:14px;
+    }
+
+    .container-fluid{
+        width:100%;
+        padding: 0px;
+    }
+
+}
+
+@media only screen and (min-width: 992px){
+    .container-fluid{
+        width: 85%;
+        padding: 0px;
+    }
+
+}
+
+@media only screen and (min-width:1600px){
+    html{
+        font-size:18px!important;
+    }
+}
+
+@media only screen and (min-width:1920px){
+    .container-fluid{
+        width: 70%;
+        padding: 0px;
+    }
+}
+

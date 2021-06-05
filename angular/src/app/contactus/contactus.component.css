@@ -1,0 +1,154 @@
+
+#main{
+    margin-top: 6.25rem;
+}
+.title{
+    text-align: center;
+}
+
+.content{
+    margin-top: 2rem;
+}
+
+.spacing-cm{
+    padding: 0px 3rem;
+}
+
+.form-group{
+    margin-top: 1rem;
+}
+#customer-message{
+    background-color: white;
+    padding: 1.25rem 1.875rem 0px;
+    box-shadow: 0px 0px 10px grey;
+    width:37.5rem;
+    position: relative;
+}
+
+#customer-message h3{
+    font-weight: bold;
+}
+
+#customer-message p{
+    color:grey;
+}
+
+#customer-message .btn{
+    margin: 1.875rem 0px;
+    padding: 0.5rem 1.875rem;
+    border-radius: 0px;
+    font-size: 1.125rem;
+    background-color: black;
+    color:white;
+}
+
+#customer-message .deco1{
+    position:absolute;
+    left:-11%;
+    top:-14%;  
+    z-index: 1; 
+    width: 8rem;
+}
+
+#customer-message .deco2{
+    position:absolute;
+    left:5%;
+    top:5%; 
+    width:2.5rem; 
+}
+
+#customer-message .deco3{
+    position:absolute;
+    right:5%;
+    top:5%; 
+    width:2.5rem; 
+}
+
+#customer-message .deco4 img{
+    position: relative;
+    left:50%;
+    transform: translateX(-50%);
+    width: 8.5rem;
+}
+
+#contact {
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+}
+#contact .social{
+    width:28rem;
+    position: relative;
+}
+
+#contact .social img{
+    width:100%;
+    
+}
+
+#contact .social a{
+    display:block;
+    position: absolute;
+}
+#contact p{
+    font-size: 1.625rem;
+}
+
+#contact u{
+    text-decoration: none;
+    padding-bottom: 0.3125rem;
+    border-bottom: 0.3125rem solid black;
+}​
+
+.accordion{ 
+    box-shadow: 0px 0px 10px grey;
+}
+
+.accordion *{
+    background-color: white;
+}
+
+.card *{
+    color:black;
+    font-size: 1.125rem;
+}
+
+.card-body{
+    padding-left:3.125rem;
+}
+
+.backtohome{
+    margin: 4.6875rem 0px;
+}
+
+.backtohome button{
+    position:relative;
+    left:50%;
+    transform: translate(-50%);
+    font-size: 1.5625rem;
+    background-color: black;
+    text-decoration: none;
+    border:0px;
+}
+
+.backtohome button a{
+    color:white;
+    text-decoration: none;
+}
+
+@media only screen and (min-width:1600px){
+    #customer-message {
+        margin-right: 5vw;
+    }
+
+    #contact{
+        margin-left: 5vw;
+    }
+}
+
+@media only screen and (max-width: 992px){
+    .spacing{
+        padding: 0px 15px;
+    }
+}
+
+
